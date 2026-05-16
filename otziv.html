@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIONECA Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">BIONECA</span>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="/about.html">О нас</a></li>
+                    <li class="active"><a href="/otziv.html">Отзывы</a></li>
+                    <li><a href="/catalog.html">Каталог</a></li>
+                    <li class="btn"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+    <div class="otziv">
+        <img src="img/Group 1325.svg" alt="">
+    </div>
+
+        
+        <div class="container email">
+            <h3>Уникальные предложения</h3>
+            <p>Скидка 3% для клиентов подписанных на нашу рассылку при любом монтаже</p>
+            <div class="block">
+                <div>
+                    <h4>Подпишитесь на рассылку</h4>
+                    <p>Подпишитесь, чтобы узнавать о самых новых поставках, выгодных предложениях и акциях.</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Enter email address">
+                    <button onclick="checkEmail()">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">BIONECA</span>
+                <p>«Ключ к успеху — это создание у клиентов реалистичных ожиданий, а затем эти ожидания нужно не просто оправдать, их нужно превзойти». Ричард Брэнсон, основатель корпорации Virgin Group.</p>
+            </div>
+            <div>
+                <h4>О нас</h4>
+                <ul>
+                    <li>Отзывы</li>
+                    <li>Careers</li>
+                    <li>Оставить зваявку</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>Также можете всегда обратиться в любой удобный для вас мессенджер или позвонить по телефону</p>
+                <p>+7 917 123 45 67</p>
+            </div>
+        </div>
+        <hr>
+        <p>Всегда рады вас видеть снова</p>
+    </footer>
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Нет символа @');
+            else if(!email.includes('.')) alert('Нет символа .');
+            else alert('Спасибо, что вы с нами!');
+        }
+    </script>
+
+</body>
+</html>

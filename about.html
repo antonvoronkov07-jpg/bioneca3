@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIONECA Website</title>
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">BIONECA</span>
+            <nav>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li class="active"><a href="/about.html">О нас</a></li>
+                    <li><a href="/otziv.html">Отзывы</a></li>
+                    <li><a href="/catalog.html">Каталог</a></li>
+                    <li class="btn"><a href="contacts.html">Контакты</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="hero-about container">
+            <div class="info">
+                <h1>Лучшая компания по установке по МСК и МО</h1>
+                <p>Сотни довольных клиентов и это только начало</p>
+                <button class="btn">Оставить заявку</button>
+            </div>
+            <img src="img/Rectangle 6.png" alt="">
+        </div>
+        <div class="container work">
+            <h2>Почему мы?</h2>
+            <div class="blocks">
+                <div class="block">
+                    <span class="badge purple">Уверенные Мастера</span>
+                    <h3>Монтаж всегда качественный</h3>
+                    <p>Штат из 8 мастеров — работаем без простоев и очередей. Каждый из них прошёл обучение и является специалистом в своём деле.</p>
+                </div>
+                <div class="block">
+                    <span class="badge brown">Скорость</span>
+                    <h3>Среднее время работ 3 часа</h3>
+                    <p>Выезжаем на замер и монтаж в день обращения — если заявка до 12:00. Каждый из мастеров может выполнить от 2 монтажей в день.</p>
+                </div>
+                <div class="block">
+                    <span class="badge green">Качество</span>
+                    <h3>С нами надёжно</h3>
+                    <p>Работаем с юрлицами, закрывающие документы,  безналичный расчёт.Даём гарантию 12 месяцев  на все работы, закрепляем в договоре.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container vstavka">
+            <img src="img/Group 106 (1).png" alt="">
+        </div>
+        <div class="container command">
+            <img src="img/Group 105.png" alt="">
+        </div>
+        <div class="container email">
+            <h3>Уникальные предложения</h3>
+            <p>Скидка 3% для клиентов подписанных на нашу рассылку при любом монтаже</p>
+            <div class="block">
+                <div>
+                    <h4>Подпишитесь на рассылку</h4>
+                    <p>Подпишитесь, чтобы узнавать о самых новых поставках, выгодных предложениях и акциях.</p>
+                </div>
+                <div>
+                    <input type="email" id="emailField" placeholder="Enter email address">
+                    <button onclick="checkEmail()">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="blocks container">
+            <div>
+                <span class="logo">BIONECA</span>
+                <p>«Ключ к успеху — это создание у клиентов реалистичных ожиданий, а затем эти ожидания нужно не просто оправдать, их нужно превзойти». Ричард Брэнсон, основатель корпорации Virgin Group.</p>
+            </div>
+            <div>
+                <h4>О нас</h4>
+                <ul>
+                    <li>Отзывы</li>
+                    <li>Careers</li>
+                    <li>Оставить зваявку</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Контакты</h4>
+                <p>Также можете всегда обратиться в любой удобный для вас мессенджер или позвонить по телефону</p>
+                <p>+7 917 123 45 67</p>
+            </div>
+        </div>
+        <hr>
+        <p>Всегда рады вас видеть снова</p>
+    </footer>
+    <script>
+        function checkEmail() {
+            let email = document.querySelector('#emailField').value;
+            if(!email.includes('@')) alert('Нет символа @');
+            else if(!email.includes('.')) alert('Нет символа .');
+            else alert('Спасибо, что вы с нами!');
+        }
+    </script>
+
+</body>
+</html>
